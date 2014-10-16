@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="237044512">
-    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="1aa65c6a-aff7-4d47-899b-8abbdb485b56">
-      <driver-ref>mysql</driver-ref>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost/test</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>dfc2dfc3dfcfdfdfdfdcdfde</user-password>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="com:imipgroup:hieuvt:xmlconfig:hibernate.cfg.xml" uuid="99fa532f-d2cb-40ac-a489-5ca66677fd66">
+  <component name="DataSourceManagerImpl" format="xml" hash="2679350796">
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="97cb4e9a-2346-411c-9f32-b4113d485aa9">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost/test</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfc3dfc7dfc3dfda</user-password>
+      <schema-pattern>test.*</schema-pattern>
+      <default-schemas>test.*</default-schemas>
       <libraries>
         <library>
-          <url>file://C:\Users\Administrator\IdeaProjects\simpleHibernate\lib\mysql-connector-java-5.1.33-bin.jar</url>
+          <url>file://$PROJECT_DIR$/lib/mysql-connector-java-5.1.33-bin.jar</url>
         </library>
       </libraries>
     </data-source>

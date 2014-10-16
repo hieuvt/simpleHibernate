@@ -5,6 +5,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
@@ -100,10 +101,19 @@ public class ManageEmployee {
     public static void main(final String[] args) throws Exception {
         final Session session = getSession();
         ManageEmployee manageEmployee = new ManageEmployee();
-        Employee e1 = new Employee("Hieu");
-        manageEmployee.addEmployee(e1);
+//        Employee e1 = new Employee("Hieu");
+//        manageEmployee.addEmployee(e1);
 //        manageEmployee.listEmployees();
 //        manageEmployee.updateEmployee(1,"Minh");
 //        manageEmployee.deleteEmployee(1);
+
+        HashSet<Certificate> set1 = new HashSet();
+        set1.add(new Certificate("MCA"));
+        set1.add(new Certificate("MBA"));
+        set1.add(new Certificate("PMP"));
+
+        Employee e1 = new Employee("Hieu",set1);
+
+        manageEmployee.addEmployee(e1);
     }
 }
